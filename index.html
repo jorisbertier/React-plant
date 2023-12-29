@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div id="root">Test pour voir</div>
+        
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.6/babel.min.js" integrity="sha512-d9vLYDXWeqicCZABUs1sKXFtQdgPM54lUUvGTvoYYvfEQvg63E76t+PvySnjlgs+ZHbcqKxs3AFom2C6hLIP4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/babel">
+
+function Cart() {
+    const monstera = 'monstera';
+    const bouquet = 'bouquet';
+    const lierre = 'lierre';
+
+    const price1 = '8€';
+    const price2 = '15€'
+    const price3 = '10€';
+    return <div><h2>Panier</h2><br/><br/>
+        {monstera}<br/>
+        {bouquet}<br/>
+        {lierre}<br/>
+        </div> ;
+}
+            function Banner() {
+                const title = 'La maison Jungle';
+                return title.toUpperCase();
+            }
+
+            ReactDOM.render(
+                <><Banner/><Cart/></>,
+                document.getElementById('root')
+            )
+
+            
+        </script>
+    </body>
+</html>
